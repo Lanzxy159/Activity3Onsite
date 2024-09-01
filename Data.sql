@@ -1,712 +1,506 @@
-INSERT INTO Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded)
-VALUES 
-(1, 29, 96, true, '2010-03-06'),
-(2, 54, 61, true, '1972-12-03'),
-(3, 23, 76, false, '1993-05-17'),
-(4, 15, 98, true, '1987-08-20'),
-(5, 3, 14, false, '2022-06-23'),
-(6, 3, 6, true, '1966-05-20'),
-(7, 17, 97, true, '1996-08-30'),
-(8, 65, 34, true, '1962-12-04'),
-(9, 8, 17, true, '1975-06-26'),
-(10, 19, 38, true, '1999-05-12'),
-(11, 76, 5, true, '1976-10-02'),
-(12, 38, 59, false, '1965-06-27'),
-(13, 92, 32, false, '2004-12-12'),
-(14, 84, 96, true, '1986-08-31'),
-(15, 76, 47, false, '1973-07-18'),
-(16, 48, 78, false, '1987-03-27'),
-(17, 30, 36, true, '2007-02-11'),
-(18, 71, 55, true, '2014-10-31'),
-(19, 79, 31, false, '1996-01-15'),
-(20, 3, 93, false, '2014-08-13'),
-(21, 9, 8, true, '2010-03-26'),
-(22, 2, 9, true, '1969-02-01'),
-(23, 99, 74, false, '1984-05-10'),
-(24, 2, 43, false, '1966-10-28'),
-(25, 51, 31, false, '2007-07-03'),
-(26, 8, 75, false, '1998-03-31'),
-(27, 60, 3, true, '1963-05-17'),
-(28, 21, 13, false, '2007-02-16'),
-(29, 64, 23, false, '2019-03-04'),
-(30, 62, 79, true, '1970-08-13'),
-(31, 44, 95, true, '1984-03-09'),
-(32, 13, 89, false, '1975-11-29'),
-(33, 38, 40, true, '2006-05-20'),
-(34, 34, 17, false, '2007-08-12'),
-(35, 67, 30, false, '2008-12-10'),
-(36, 47, 2, false, '1970-12-31'),
-(37, 96, 56, true, '1975-03-23'),
-(38, 72, 36, true, '1960-02-17'),
-(39, 94, 74, true, '2014-12-25'),
-(40, 88, 12, true, '1977-11-02'),
-(41, 76, 4, false, '1974-06-24'),
-(42, 60, 70, false, '1969-05-12'),
-(43, 38, 37, true, '1974-07-30'),
-(44, 78, 58, true, '2023-11-11'),
-(45, 45, 56, true, '1982-06-14'),
-(46, 57, 26, true, '1960-09-11'),
-(47, 6, 89, false, '1999-11-04'),
-(48, 66, 39, true, '2011-08-01'),
-(49, 56, 31, false, '1991-09-07'),
-(50, 97, 15, false, '1972-01-03'),
-(51, 53, 43, false, '2004-12-03'),
-(52, 62, 46, true, '1986-07-26'),
-(53, 66, 59, true, '1986-03-02'),
-(54, 57, 79, true, '2013-09-08'),
-(55, 14, 96, false, '2022-03-10'),
-(56, 61, 21, false, '2014-11-09'),
-(57, 72, 73, false, '2008-10-13'),
-(58, 41, 70, true, '1966-06-24'),
-(59, 47, 91, false, '2012-09-12'),
-(60, 11, 59, false, '2018-10-23'),
-(61, 87, 43, false, '1996-12-05'),
-(62, 20, 1, true, '1966-06-04'),
-(63, 55, 99, true, '1966-04-29'),
-(64, 100, 52, false, '1969-07-31'),
-(65, 41, 33, true, '1966-08-31'),
-(66, 99, 38, true, '1996-03-30'),
-(67, 63, 78, true, '2008-08-31'),
-(68, 30, 76, true, '1995-09-13'),
-(69, 18, 76, true, '2000-08-24'),
-(70, 64, 69, true, '2015-07-16'),
-(71, 70, 45, false, '1999-09-10'),
-(72, 9, 43, true, '1966-02-11'),
-(73, 21, 4, false, '1971-03-10'),
-(74, 53, 85, true, '1979-05-16'),
-(75, 17, 13, false, '2022-09-30'),
-(76, 56, 27, false, '2007-07-10'),
-(77, 12, 75, false, '1984-08-02'),
-(78, 45, 84, true, '2021-10-14'),
-(79, 9, 60, true, '1974-12-15'),
-(80, 94, 25, false, '2021-04-25'),
-(81, 95, 77, true, '1986-02-08'),
-(82, 54, 84, false, '2006-04-14'),
-(83, 96, 26, true, '1986-03-30'),
-(84, 49, 53, false, '2004-11-24'),
-(85, 29, 99, true, '2003-08-30'),
-(86, 93, 79, true, '1972-02-26'),
-(87, 25, 37, false, '2021-07-11'),
-(88, 12, 61, true, '1972-06-15'),
-(89, 2, 76, true, '1984-12-17'),
-(90, 96, 45, false, '2019-08-08'),
-(91, 79, 79, true, '1979-12-21'),
-(92, 92, 83, true, '2018-07-20'),
-(93, 37, 32, true, '2000-10-06'),
-(94, 69, 77, false, '1964-05-20'),
-(95, 63, 88, false, '1971-06-01'),
-(96, 33, 45, true, '2014-08-02'),
-(97, 37, 74, false, '1984-03-09'),
-(98, 31, 1, true, '2017-09-11'),
-(99, 20, 21, false, '2014-03-24'),
-(100, 65, 26, false, '2017-02-13');
--- /////////////////////////////////////////////////
-INSERT INTO GroupMemberShipRequests (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) VALUES
-(1, 21, 53, false, '2024-07-19'),
-(2, 76, 16, true, '2024-08-07'),
-(3, 15, 7, true, '2024-02-13'),
-(4, 98, 82, true, '2023-10-02'),
-(5, 50, 93, true, '2023-11-05'),
-(6, 80, 14, false, '2024-07-11'),
-(7, 78, 85, true, '2024-01-31'),
-(8, 32, 30, true, '2024-06-04'),
-(9, 99, 41, false, '2024-06-01'),
-(10, 40, 37, true, '2023-11-13'),
-(11, 40, 12, false, '2023-12-18'),
-(12, 15, 96, false, '2023-10-24'),
-(13, 78, 18, true, '2024-03-12'),
-(14, 8, 28, false, '2024-05-25'),
-(15, 91, 40, false, '2024-04-02'),
-(16, 57, 98, false, '2024-08-04'),
-(17, 68, 51, false, '2024-01-30'),
-(18, 11, 14, true, '2023-10-10'),
-(19, 71, 35, true, '2024-07-29'),
-(20, 84, 97, false, '2024-04-03'),
-(21, 55, 56, true, '2023-11-15'),
-(22, 69, 50, true, '2023-09-01'),
-(23, 48, 80, true, '2024-06-29'),
-(24, 60, 88, false, '2024-06-02'),
-(25, 7, 86, false, '2024-04-02'),
-(26, 68, 57, false, '2023-12-11'),
-(27, 58, 75, true, '2023-09-21'),
-(28, 92, 94, false, '2024-02-14'),
-(29, 41, 23, false, '2023-12-10'),
-(30, 22, 20, true, '2023-10-16'),
-(31, 19, 86, false, '2023-12-09'),
-(32, 81, 35, true, '2024-01-20'),
-(33, 5, 98, false, '2024-05-19'),
-(34, 11, 5, false, '2024-01-28'),
-(35, 100, 67, true, '2023-12-12'),
-(36, 100, 68, false, '2023-09-01'),
-(37, 35, 15, false, '2024-06-10'),
-(38, 8, 10, true, '2023-11-05'),
-(39, 37, 51, true, '2024-08-29'),
-(40, 64, 15, true, '2024-01-15'),
-(41, 7, 79, false, '2024-05-13'),
-(42, 72, 54, true, '2023-09-04'),
-(43, 60, 59, true, '2023-11-11'),
-(44, 85, 47, true, '2023-11-13'),
-(45, 82, 18, false, '2024-06-25'),
-(46, 13, 14, true, '2023-09-02'),
-(47, 47, 24, true, '2024-07-23'),
-(48, 20, 63, false, '2024-05-01'),
-(49, 100, 93, false, '2024-01-20'),
-(50, 61, 83, false, '2024-05-23'),
-(51, 2, 25, false, '2024-01-29'),
-(52, 100, 58, false, '2024-01-16'),
-(53, 38, 44, false, '2024-06-16'),
-(54, 81, 75, false, '2023-10-04'),
-(55, 78, 57, true, '2023-12-06'),
-(56, 42, 6, false, '2024-04-25'),
-(57, 71, 31, false, '2023-10-15'),
-(58, 91, 47, true, '2024-06-05'),
-(59, 31, 13, false, '2024-06-16'),
-(60, 99, 43, true, '2024-01-18'),
-(61, 96, 78, true, '2023-10-02'),
-(62, 73, 77, false, '2023-10-30'),
-(63, 78, 62, true, '2023-12-18'),
-(64, 15, 29, false, '2024-01-04'),
-(65, 4, 18, false, '2023-09-04'),
-(66, 98, 40, true, '2024-02-02'),
-(67, 63, 88, true, '2024-04-18'),
-(68, 59, 52, false, '2023-11-11'),
-(69, 11, 11, true, '2024-02-13'),
-(70, 47, 51, false, '2024-07-06'),
-(71, 68, 47, false, '2024-08-26'),
-(72, 24, 77, false, '2024-07-15'),
-(73, 62, 59, true, '2024-06-02'),
-(74, 8, 17, false, '2024-03-28'),
-(75, 77, 12, false, '2023-12-20'),
-(76, 99, 76, false, '2024-02-26'),
-(77, 98, 48, false, '2024-06-15'),
-(78, 57, 4, true, '2024-05-26'),
-(79, 31, 94, true, '2024-01-17'),
-(80, 66, 21, false, '2024-01-23'),
-(81, 47, 41, true, '2023-11-18'),
-(82, 16, 18, false, '2023-11-06'),
-(83, 62, 31, true, '2024-01-18'),
-(84, 70, 96, false, '2024-05-02'),
-(85, 35, 78, true, '2024-04-05'),
-(86, 93, 56, false, '2023-11-30'),
-(87, 5, 100, true, '2023-09-07'),
-(88, 100, 62, false, '2024-08-09'),
-(89, 89, 39, false, '2024-08-03'),
-(90, 90, 99, false, '2023-12-02'),
-(91, 62, 92, false, '2023-10-25'),
-(92, 24, 81, false, '2023-10-04'),
-(93, 20, 88, false, '2023-11-21'),
-(94, 9, 66, true, '2024-08-03'),
-(95, 33, 51, true, '2024-06-29'),
-(96, 68, 57, false, '2023-12-22'),
-(97, 67, 34, false, '2024-06-15'),
-(98, 70, 7, true, '2023-11-21'),
-(99, 81, 100, false, '2024-01-10'),
-(100, 100, 58, false, '2023-09-23');
--- //////////////////////////////////////////////////
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (1, 'jgavan0', 'Justin', '5/30/2015');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (2, 'blequeux1', 'Bonnie', '8/30/1965');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (3, 'tlazenbury2', 'Teddie', '10/13/2010');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (4, 'slinay3', 'Skyler', '11/2/2012');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (5, 'tblampey4', 'Trenton', '3/22/2013');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (6, 'jmagrannell5', 'Joelynn', '8/28/2010');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (7, 'mhandes6', 'Mariska', '1/31/1970');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (8, 'cinnott7', 'Cy', '12/22/2020');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (9, 'gkirkham8', 'Giorgia', '12/15/1999');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (10, 'rclimar9', 'Raye', '5/23/1995');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (11, 'lmundiea', 'Lisette', '9/2/1983');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (12, 'uelceb', 'Udell', '7/11/1975');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (13, 'msommerlingc', 'Melody', '9/7/1960');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (14, 'bverneyd', 'Banky', '10/31/1970');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (15, 'ggrugerre', 'Gwendolyn', '7/18/2021');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (16, 'rsiggeryf', 'Reine', '3/5/2009');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (17, 'akeeping', 'Abigael', '6/3/2013');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (18, 'bvanesh', 'Brigid', '5/15/1991');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (19, 'dhoulsoni', 'Doro', '2/29/2000');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (20, 'oelyj', 'Omar', '7/9/2009');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (21, 'aplattk', 'Anna', '4/20/2020');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (22, 'abottomleyl', 'Arluene', '2/27/1971');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (23, 'wbeakm', 'Walton', '1/9/1975');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (24, 'boniansn', 'Brnaby', '5/9/1991');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (25, 'bmorado', 'Bayard', '10/28/2003');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (26, 'uleveridgep', 'Urson', '3/27/1972');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (27, 'ryankovq', 'Rudd', '3/31/2001');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (28, 'baleninr', 'Bendix', '3/24/1976');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (29, 'ghelms', 'Guss', '9/5/2003');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (30, 'jcardenast', 'Jerrilyn', '9/20/1999');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (31, 'esoftleyu', 'Enrica', '2/14/1994');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (32, 'glusherv', 'Glenden', '4/20/1973');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (33, 'pmityushkinw', 'Poppy', '5/1/1984');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (34, 'fnonox', 'Friedrich', '1/14/1970');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (35, 'sdemougeoty', 'Shae', '3/28/2015');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (36, 'ckupecz', 'Claudianus', '5/19/2002');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (37, 'zwrigglesworth10', 'Zea', '1/30/1979');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (38, 'rbowmaker11', 'Russ', '5/24/1982');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (39, 'shitchens12', 'Stephine', '6/22/2002');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (40, 'todooghaine13', 'Timoteo', '6/12/1981');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (41, 'ryanshonok14', 'Rutherford', '1/9/2002');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (42, 'mvitall15', 'Miran', '2/11/2003');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (43, 'hbeinisch16', 'Hort', '1/3/2023');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (44, 'rguilleton17', 'Rosie', '6/16/1963');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (45, 'fwitty18', 'Flori', '7/23/1986');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (46, 'jtringham19', 'Judon', '9/19/1986');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (47, 'tmarkie1a', 'Trudi', '5/24/1989');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (48, 'agrayshan1b', 'Audy', '2/19/1983');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (49, 'hhonywill1c', 'Humbert', '12/30/1994');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (50, 'ocove1d', 'Oswell', '11/4/1964');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (51, 'rcleeton1e', 'Romola', '6/7/1994');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (52, 'mbreston1f', 'Maryjo', '11/25/1961');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (53, 'ghamner1g', 'Gayel', '7/28/1962');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (54, 'cryott1h', 'Carlina', '3/9/1985');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (55, 'ssaxelby1i', 'Sol', '10/11/1984');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (56, 'mkidney1j', 'Montgomery', '7/23/1981');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (57, 'fkleinzweig1k', 'Fayette', '7/9/1970');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (58, 'lcalven1l', 'Lorens', '11/23/1998');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (59, 'vcasbourne1m', 'Virgie', '11/29/2001');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (60, 'lbreydin1n', 'Lewie', '1/20/2009');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (61, 'adjuricic1o', 'Adria', '1/15/2015');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (62, 'rbasilone1p', 'Reinhard', '8/23/1995');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (63, 'dakam1q', 'Dorie', '8/9/1963');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (64, 'jmarkie1r', 'Jens', '1/30/1998');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (65, 'fheining1s', 'Fionnula', '4/22/2009');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (66, 'hjamary1t', 'Hanny', '5/25/2023');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (67, 'psommersett1u', 'Petey', '8/1/1976');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (68, 'dbenthall1v', 'Dennet', '2/23/1980');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (69, 'ewindress1w', 'Elwira', '8/21/1993');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (70, 'npackwood1x', 'Nelie', '9/18/2013');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (71, 'lradloff1y', 'Lorin', '12/11/1987');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (72, 'ddivina1z', 'Dorree', '11/21/1965');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (73, 'atrunchion20', 'Artie', '12/3/1984');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (74, 'ebullerwell21', 'Edgardo', '7/18/2016');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (75, 'mwindrus22', 'Martie', '11/5/1984');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (76, 'htrosdall23', 'Hestia', '10/21/1965');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (77, 'igudger24', 'Imelda', '11/4/1962');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (78, 'rnovkovic25', 'Raquel', '9/12/1961');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (79, 'kbroseman26', 'Katharina', '5/1/1960');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (80, 'lmathelin27', 'Lyndell', '2/28/1993');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (81, 'agrelak28', 'Arny', '12/16/1983');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (82, 'hblew29', 'Heindrick', '9/21/1972');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (83, 'ibaison2a', 'Ilsa', '1/16/2008');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (84, 'ljenkin2b', 'Lion', '6/28/1974');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (85, 'rbewfield2c', 'Royall', '10/8/1987');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (86, 'ckisting2d', 'Cristobal', '6/8/1994');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (87, 'ealderwick2e', 'Estel', '10/25/2004');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (88, 'mmckue2f', 'Madison', '5/18/1982');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (89, 'emasseo2g', 'Elias', '9/7/2007');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (90, 'mparadis2h', 'Mellisa', '5/30/2017');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (91, 'ldefreyne2i', 'Lewiss', '6/30/2021');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (92, 'kebanks2j', 'Konstantin', '8/7/2014');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (93, 'igosalvez2k', 'Ines', '3/11/1982');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (94, 'mmeys2l', 'Meade', '5/22/1968');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (95, 'sshimwall2m', 'Sunny', '3/8/1999');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (96, 'agibling2n', 'Alasdair', '5/17/1995');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (97, 'dmadine2o', 'Donica', '9/2/1981');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (98, 'jpelosi2p', 'Julie', '8/17/1969');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (99, 'dblackway2q', 'Devon', '9/2/1982');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (100, 'missac2r', 'Melantha', '3/7/2005');
--- ///////////////////////////////
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (1, 'jgavan0', 'Justin', '5/30/2015');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (2, 'blequeux1', 'Bonnie', '8/30/1965');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (3, 'tlazenbury2', 'Teddie', '10/13/2010');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (4, 'slinay3', 'Skyler', '11/2/2012');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (5, 'tblampey4', 'Trenton', '3/22/2013');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (6, 'jmagrannell5', 'Joelynn', '8/28/2010');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (7, 'mhandes6', 'Mariska', '1/31/1970');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (8, 'cinnott7', 'Cy', '12/22/2020');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (9, 'gkirkham8', 'Giorgia', '12/15/1999');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (10, 'rclimar9', 'Raye', '5/23/1995');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (11, 'lmundiea', 'Lisette', '9/2/1983');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (12, 'uelceb', 'Udell', '7/11/1975');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (13, 'msommerlingc', 'Melody', '9/7/1960');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (14, 'bverneyd', 'Banky', '10/31/1970');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (15, 'ggrugerre', 'Gwendolyn', '7/18/2021');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (16, 'rsiggeryf', 'Reine', '3/5/2009');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (17, 'akeeping', 'Abigael', '6/3/2013');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (18, 'bvanesh', 'Brigid', '5/15/1991');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (19, 'dhoulsoni', 'Doro', '2/29/2000');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (20, 'oelyj', 'Omar', '7/9/2009');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (21, 'aplattk', 'Anna', '4/20/2020');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (22, 'abottomleyl', 'Arluene', '2/27/1971');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (23, 'wbeakm', 'Walton', '1/9/1975');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (24, 'boniansn', 'Brnaby', '5/9/1991');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (25, 'bmorado', 'Bayard', '10/28/2003');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (26, 'uleveridgep', 'Urson', '3/27/1972');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (27, 'ryankovq', 'Rudd', '3/31/2001');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (28, 'baleninr', 'Bendix', '3/24/1976');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (29, 'ghelms', 'Guss', '9/5/2003');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (30, 'jcardenast', 'Jerrilyn', '9/20/1999');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (31, 'esoftleyu', 'Enrica', '2/14/1994');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (32, 'glusherv', 'Glenden', '4/20/1973');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (33, 'pmityushkinw', 'Poppy', '5/1/1984');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (34, 'fnonox', 'Friedrich', '1/14/1970');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (35, 'sdemougeoty', 'Shae', '3/28/2015');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (36, 'ckupecz', 'Claudianus', '5/19/2002');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (37, 'zwrigglesworth10', 'Zea', '1/30/1979');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (38, 'rbowmaker11', 'Russ', '5/24/1982');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (39, 'shitchens12', 'Stephine', '6/22/2002');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (40, 'todooghaine13', 'Timoteo', '6/12/1981');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (41, 'ryanshonok14', 'Rutherford', '1/9/2002');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (42, 'mvitall15', 'Miran', '2/11/2003');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (43, 'hbeinisch16', 'Hort', '1/3/2023');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (44, 'rguilleton17', 'Rosie', '6/16/1963');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (45, 'fwitty18', 'Flori', '7/23/1986');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (46, 'jtringham19', 'Judon', '9/19/1986');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (47, 'tmarkie1a', 'Trudi', '5/24/1989');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (48, 'agrayshan1b', 'Audy', '2/19/1983');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (49, 'hhonywill1c', 'Humbert', '12/30/1994');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (50, 'ocove1d', 'Oswell', '11/4/1964');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (51, 'rcleeton1e', 'Romola', '6/7/1994');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (52, 'mbreston1f', 'Maryjo', '11/25/1961');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (53, 'ghamner1g', 'Gayel', '7/28/1962');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (54, 'cryott1h', 'Carlina', '3/9/1985');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (55, 'ssaxelby1i', 'Sol', '10/11/1984');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (56, 'mkidney1j', 'Montgomery', '7/23/1981');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (57, 'fkleinzweig1k', 'Fayette', '7/9/1970');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (58, 'lcalven1l', 'Lorens', '11/23/1998');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (59, 'vcasbourne1m', 'Virgie', '11/29/2001');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (60, 'lbreydin1n', 'Lewie', '1/20/2009');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (61, 'adjuricic1o', 'Adria', '1/15/2015');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (62, 'rbasilone1p', 'Reinhard', '8/23/1995');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (63, 'dakam1q', 'Dorie', '8/9/1963');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (64, 'jmarkie1r', 'Jens', '1/30/1998');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (65, 'fheining1s', 'Fionnula', '4/22/2009');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (66, 'hjamary1t', 'Hanny', '5/25/2023');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (67, 'psommersett1u', 'Petey', '8/1/1976');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (68, 'dbenthall1v', 'Dennet', '2/23/1980');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (69, 'ewindress1w', 'Elwira', '8/21/1993');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (70, 'npackwood1x', 'Nelie', '9/18/2013');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (71, 'lradloff1y', 'Lorin', '12/11/1987');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (72, 'ddivina1z', 'Dorree', '11/21/1965');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (73, 'atrunchion20', 'Artie', '12/3/1984');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (74, 'ebullerwell21', 'Edgardo', '7/18/2016');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (75, 'mwindrus22', 'Martie', '11/5/1984');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (76, 'htrosdall23', 'Hestia', '10/21/1965');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (77, 'igudger24', 'Imelda', '11/4/1962');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (78, 'rnovkovic25', 'Raquel', '9/12/1961');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (79, 'kbroseman26', 'Katharina', '5/1/1960');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (80, 'lmathelin27', 'Lyndell', '2/28/1993');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (81, 'agrelak28', 'Arny', '12/16/1983');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (82, 'hblew29', 'Heindrick', '9/21/1972');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (83, 'ibaison2a', 'Ilsa', '1/16/2008');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (84, 'ljenkin2b', 'Lion', '6/28/1974');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (85, 'rbewfield2c', 'Royall', '10/8/1987');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (86, 'ckisting2d', 'Cristobal', '6/8/1994');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (87, 'ealderwick2e', 'Estel', '10/25/2004');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (88, 'mmckue2f', 'Madison', '5/18/1982');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (89, 'emasseo2g', 'Elias', '9/7/2007');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (90, 'mparadis2h', 'Mellisa', '5/30/2017');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (91, 'ldefreyne2i', 'Lewiss', '6/30/2021');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (92, 'kebanks2j', 'Konstantin', '8/7/2014');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (93, 'igosalvez2k', 'Ines', '3/11/1982');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (94, 'mmeys2l', 'Meade', '5/22/1968');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (95, 'sshimwall2m', 'Sunny', '3/8/1999');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (96, 'agibling2n', 'Alasdair', '5/17/1995');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (97, 'dmadine2o', 'Donica', '9/2/1981');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (98, 'jpelosi2p', 'Julie', '8/17/1969');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (99, 'dblackway2q', 'Devon', '9/2/1982');
-insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (100, 'missac2r', 'Melantha', '3/7/2005');
--- //////////////////////////////////////////////////////
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (1, 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 75, false, false, 1, '9/18/1961');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (2, 'Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 10, false, true, 66, '2/21/1977');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (3, 'In blandit ultrices enim.', 26, true, true, 97, '6/3/1986');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (4, 'Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis.', 31, true, true, 99, '6/12/2013');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (5, 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', 99, true, true, 63, '12/18/1963');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (6, 'Quisque ut erat. Curabitur gravida nisi at nibh. In hac habitasse platea dictumst.', 71, false, false, 48, '3/28/1981');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (7, 'In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat. Curabitur gravida nisi at nibh. In hac habitasse platea dictumst.', 11, true, false, 64, '5/1/1983');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (8, 'Vivamus vel nulla eget eros elementum pellentesque.', 73, true, false, 84, '7/6/2012');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (9, 'Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo. Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor.', 17, false, false, 68, '8/4/2020');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (10, 'Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus. Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', 35, false, false, 90, '1/18/2002');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (11, 'Praesent blandit.', 20, false, true, 63, '4/15/1990');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (12, 'Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus.', 5, false, false, 95, '7/5/1980');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (13, 'Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy.', 25, true, false, 74, '1/19/2005');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (14, 'Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue.', 20, false, true, 87, '3/16/1980');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (15, 'Proin eu mi.', 4, false, false, 64, '8/4/2022');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (16, 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus. In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio.', 53, true, true, 47, '11/3/1980');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (17, 'Cras non velit nec nisi vulputate nonummy.', 22, true, true, 12, '6/17/2008');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (18, 'Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 2, false, false, 63, '11/12/1987');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (19, 'Duis at velit eu est congue elementum. In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo. Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor.', 95, true, false, 42, '12/21/2005');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (20, 'Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', 31, false, true, 67, '6/12/2021');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (21, 'Phasellus id sapien in sapien iaculis congue.', 75, true, false, 57, '10/20/1993');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (22, 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet.', 68, false, false, 88, '8/21/1974');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (23, 'Nunc purus. Phasellus in felis. Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla.', 12, false, true, 16, '4/9/1964');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (24, 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat.', 17, false, false, 52, '8/22/1993');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (25, 'Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 18, false, false, 53, '9/12/1962');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (26, 'Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', 45, false, true, 80, '4/12/1967');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (27, 'Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy.', 52, false, false, 34, '8/4/1991');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (28, 'Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh. In quis justo.', 39, false, true, 31, '3/1/1986');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (29, 'Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum. In hac habitasse platea dictumst.', 11, false, true, 82, '12/16/2018');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (30, 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius. Integer ac leo.', 49, true, false, 19, '1/14/1996');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (31, 'Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique.', 40, true, true, 56, '6/5/2016');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (32, 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.', 56, false, false, 33, '5/13/1992');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (33, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc.', 93, false, true, 76, '8/5/2017');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (34, 'Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', 97, false, true, 80, '6/24/1982');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (35, 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy.', 76, true, false, 75, '9/25/1974');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (36, 'Nunc rhoncus dui vel sem. Sed sagittis.', 53, true, true, 15, '7/21/1965');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (37, 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue.', 18, true, false, 66, '5/23/1986');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (38, 'Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.', 12, false, false, 82, '9/9/2011');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (39, 'Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.', 66, false, true, 1, '12/13/1997');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (40, 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam.', 11, false, false, 65, '3/25/2015');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (41, 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet.', 1, true, false, 7, '12/5/1990');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (42, 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est. Phasellus sit amet erat.', 13, true, false, 38, '5/14/1983');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (43, 'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', 2, false, false, 14, '5/12/1999');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (44, 'Quisque porta volutpat erat.', 79, true, false, 98, '5/25/2005');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (45, 'Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.', 4, false, true, 94, '10/29/1989');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (46, 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti.', 52, false, false, 55, '12/25/2021');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (47, 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue.', 31, false, false, 49, '1/30/1970');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (48, 'Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis.', 7, true, true, 37, '3/16/2008');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (49, 'Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', 52, false, true, 98, '5/12/1972');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (50, 'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus. In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 79, true, true, 71, '11/27/1999');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (51, 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', 25, true, true, 72, '8/23/2020');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (52, 'In quis justo. Maecenas rhoncus aliquam lacus.', 82, true, false, 45, '12/2/2013');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (53, 'Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat. Curabitur gravida nisi at nibh. In hac habitasse platea dictumst.', 93, false, true, 24, '5/30/2012');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (54, 'Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim.', 72, false, false, 20, '3/2/2023');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (55, 'In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', 74, true, true, 76, '6/12/2021');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (56, 'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus. In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 74, false, false, 4, '11/7/1993');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (57, 'Duis at velit eu est congue elementum. In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo. Aliquam quis turpis eget elit sodales scelerisque.', 56, false, false, 44, '3/22/1974');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (58, 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim.', 12, false, true, 76, '3/3/2010');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (59, 'Duis bibendum. Morbi non quam nec dui luctus rutrum.', 32, false, false, 66, '9/23/1963');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (60, 'In quis justo. Maecenas rhoncus aliquam lacus.', 15, true, true, 84, '7/27/1999');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (61, 'Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue.', 72, true, false, 72, '9/10/2023');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (62, 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 1, false, true, 27, '6/24/1984');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (63, 'Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 81, false, false, 23, '7/4/2012');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (64, 'Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl.', 55, false, false, 64, '2/25/1998');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (65, 'Phasellus in felis. Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis.', 42, true, true, 48, '1/16/2021');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (66, 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', 50, false, true, 52, '9/1/1979');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (67, 'Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat.', 23, false, false, 2, '2/1/1984');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (68, 'Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.', 97, true, true, 79, '9/8/1972');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (69, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.', 39, false, false, 2, '11/11/1983');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (70, 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.', 37, true, false, 70, '7/6/1967');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (71, 'Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis. Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla.', 84, false, true, 88, '10/12/1968');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (72, 'Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est.', 67, true, false, 13, '3/24/1988');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (73, 'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus. In sagittis dui vel nisl.', 83, false, true, 98, '7/26/1972');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (74, 'Nulla nisl.', 34, false, true, 39, '10/12/1998');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (75, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue.', 6, true, true, 89, '2/28/2010');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (76, 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo.', 29, true, true, 84, '5/11/2024');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (77, 'Fusce posuere felis sed lacus.', 38, true, true, 14, '7/16/1982');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (78, 'Pellentesque eget nunc.', 29, false, true, 68, '8/4/1965');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (79, 'Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus.', 66, true, false, 72, '7/11/2019');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (80, 'Nunc purus. Phasellus in felis. Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', 26, false, false, 79, '7/22/1998');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (81, 'Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo.', 93, true, true, 13, '6/29/1976');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (82, 'In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.', 64, false, false, 73, '7/12/1966');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (83, 'Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', 75, false, true, 65, '5/28/2018');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (84, 'Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', 52, false, false, 39, '5/12/1969');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (85, 'Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla.', 87, true, true, 84, '12/7/2016');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (86, 'Nulla mollis molestie lorem. Quisque ut erat. Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem. Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla.', 46, false, false, 34, '12/30/1964');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (87, 'Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', 31, true, true, 57, '1/30/2005');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (88, 'Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 96, true, true, 52, '8/21/1974');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (89, 'Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat.', 30, true, true, 23, '4/26/2020');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (90, 'In quis justo.', 85, false, true, 33, '6/9/2008');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (91, 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam.', 62, true, false, 9, '10/29/1972');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (92, 'In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem. Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus.', 15, false, false, 41, '9/21/1987');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (93, 'In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa.', 75, false, false, 32, '5/21/2022');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (94, 'Proin eu mi. Nulla ac enim.', 13, false, false, 56, '5/20/1968');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (95, 'Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', 88, true, false, 93, '5/3/1984');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (96, 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy.', 58, true, true, 88, '5/24/2020');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (97, 'Curabitur convallis.', 99, true, true, 25, '12/10/1985');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (98, 'Duis at velit eu est congue elementum. In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo. Aliquam quis turpis eget elit sodales scelerisque.', 49, true, false, 40, '9/10/1979');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (99, 'Ut at dolor quis odio consequat varius. Integer ac leo.', 91, false, true, 98, '12/27/1967');
-insert into Posts  (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DateAdded) values (100, 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue. Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna.', 12, false, false, 90, '8/5/1967');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (1, 1, 89, false, '09/18/1990');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (2, 6, 12, false, '02/14/1971');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (3, 9, 83, true, '06/26/1996');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (4, 87, 25, false, '10/11/1998');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (5, 14, 17, true, '08/27/1966');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (6, 1, 71, false, '05/25/2021');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (7, 17, 28, true, '12/07/1993');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (8, 75, 65, false, '09/14/1998');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (9, 74, 94, true, '06/28/1964');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (10, 79, 46, true, '01/01/1979');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (11, 9, 90, true, '09/12/1986');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (12, 50, 2, false, '10/15/1977');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (13, 42, 39, true, '04/27/1970');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (14, 50, 95, true, '10/19/1969');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (15, 20, 27, false, '05/05/2015');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (16, 46, 47, false, '09/15/2007');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (17, 56, 92, false, '06/15/1982');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (18, 11, 51, true, '07/28/2016');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (19, 54, 21, true, '05/26/1994');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (20, 40, 6, true, '09/16/2017');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (21, 97, 79, true, '07/18/2024');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (22, 16, 46, false, '07/13/1992');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (23, 23, 85, true, '09/20/2001');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (24, 25, 9, true, '04/30/1980');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (25, 53, 66, true, '10/06/2020');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (26, 20, 41, false, '03/12/2021');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (27, 70, 2, true, '06/30/1969');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (28, 38, 85, false, '10/25/2017');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (29, 12, 3, false, '11/08/1986');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (30, 34, 63, false, '09/11/1992');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (31, 5, 31, false, '06/28/2002');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (32, 96, 73, true, '05/07/1982');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (33, 57, 22, true, '02/10/1967');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (34, 18, 76, true, '01/06/1995');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (35, 16, 16, false, '05/16/2023');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (36, 81, 72, false, '04/24/2011');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (37, 96, 52, false, '04/30/1999');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (38, 41, 11, false, '01/03/2012');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (39, 68, 49, true, '12/19/2011');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (40, 18, 70, false, '03/29/1982');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (41, 66, 12, false, '12/16/1967');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (42, 23, 31, false, '05/23/2002');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (43, 23, 40, true, '01/13/2010');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (44, 12, 85, false, '11/05/2020');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (45, 24, 55, false, '05/27/1982');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (46, 77, 65, false, '01/25/1981');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (47, 43, 45, false, '03/25/2012');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (48, 95, 14, true, '12/01/2022');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (49, 3, 31, false, '11/17/1978');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (50, 75, 80, false, '04/30/1984');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (51, 78, 84, true, '06/22/2005');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (52, 13, 27, true, '12/15/1966');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (53, 49, 73, true, '03/09/2013');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (54, 87, 75, true, '07/03/1984');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (55, 4, 34, true, '12/27/1961');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (56, 86, 96, true, '10/24/1989');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (57, 33, 49, true, '06/07/2005');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (58, 20, 15, false, '05/03/1986');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (59, 53, 87, true, '08/11/1966');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (60, 31, 12, true, '01/26/1968');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (61, 50, 34, true, '04/10/2024');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (62, 92, 43, false, '03/25/2022');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (63, 8, 71, false, '12/16/1967');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (64, 13, 84, false, '01/09/1979');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (65, 54, 81, true, '06/14/1972');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (66, 82, 28, false, '11/02/1981');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (67, 20, 16, true, '05/14/2000');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (68, 14, 30, true, '07/03/1988');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (69, 80, 96, true, '02/04/1977');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (70, 94, 25, false, '01/29/2009');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (71, 18, 86, true, '05/31/2002');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (72, 14, 86, true, '08/06/1984');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (73, 62, 54, true, '04/04/1975');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (74, 48, 27, false, '03/08/1964');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (75, 90, 7, true, '10/23/2005');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (76, 81, 22, false, '05/25/1976');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (77, 27, 94, true, '07/31/1975');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (78, 72, 12, true, '01/31/2005');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (79, 82, 36, true, '05/23/1962');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (80, 35, 81, true, '02/16/1990');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (81, 15, 99, false, '04/14/1999');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (82, 44, 86, false, '04/17/2022');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (83, 25, 10, true, '07/04/1988');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (84, 25, 43, false, '07/17/2011');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (85, 7, 80, false, '09/16/2003');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (86, 82, 59, true, '08/28/1983');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (87, 94, 25, true, '10/14/1963');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (88, 65, 82, false, '04/01/2010');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (89, 59, 1, true, '05/08/1965');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (90, 74, 69, false, '03/06/1970');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (91, 18, 99, true, '12/20/2020');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (92, 31, 96, true, '10/30/1991');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (93, 2, 40, false, '10/21/2009');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (94, 82, 9, true, '08/26/2001');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (95, 95, 1, false, '04/04/2013');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (96, 39, 20, false, '11/26/1997');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (97, 13, 41, true, '02/18/1977');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (98, 96, 40, false, '12/04/1993');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (99, 100, 38, false, '01/19/2015');
+insert into Friends (FriendID, FriendWhoAdded, FriendBeingAdded, IsAccepted, DateAdded) values (100, 38, 22, false, '05/06/1969');
+-- ////////////
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (1, 3, 35, true, '12/20/2017');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (2, 36, 79, false, '09/18/1962');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (3, 74, 26, true, '02/23/1995');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (4, 45, 18, true, '08/01/1969');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (5, 64, 18, false, '05/02/1987');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (6, 63, 3, false, '01/13/1985');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (7, 54, 65, false, '05/06/1994');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (8, 65, 74, true, '01/25/1967');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (9, 33, 73, false, '08/31/2015');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (10, 44, 14, true, '03/08/1995');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (11, 96, 15, false, '02/18/1968');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (12, 25, 15, true, '04/03/1968');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (13, 98, 7, true, '12/18/1987');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (14, 82, 23, true, '12/19/1963');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (15, 57, 50, true, '09/16/2014');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (16, 21, 70, true, '09/10/2015');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (17, 93, 34, true, '08/01/2018');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (18, 66, 48, true, '01/09/1997');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (19, 58, 54, true, '10/11/1973');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (20, 47, 17, false, '12/27/1979');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (21, 50, 70, true, '08/20/1970');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (22, 33, 60, false, '08/03/1996');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (23, 97, 81, true, '09/03/2007');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (24, 5, 5, true, '06/22/2003');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (25, 74, 44, false, '03/26/2015');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (26, 57, 3, false, '07/03/2011');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (27, 100, 13, false, '03/21/1997');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (28, 45, 46, false, '02/11/2008');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (29, 98, 33, false, '07/15/1991');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (30, 96, 57, false, '03/21/2008');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (31, 36, 54, false, '04/09/1969');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (32, 63, 83, true, '08/03/2012');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (33, 91, 92, true, '07/07/2012');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (34, 84, 88, true, '09/06/1973');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (35, 59, 3, false, '11/15/1968');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (36, 96, 71, true, '06/20/2001');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (37, 10, 55, true, '07/08/1980');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (38, 78, 36, true, '11/02/2013');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (39, 13, 94, true, '09/25/2017');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (40, 35, 55, true, '05/18/2017');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (41, 57, 41, false, '03/04/1967');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (42, 77, 97, false, '10/26/1971');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (43, 85, 56, true, '02/26/1982');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (44, 23, 40, true, '10/03/1979');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (45, 2, 2, false, '02/08/1988');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (46, 63, 26, false, '07/20/2018');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (47, 36, 29, false, '08/06/2009');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (48, 18, 65, false, '05/25/1970');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (49, 70, 30, true, '01/19/1995');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (50, 24, 69, false, '03/06/1970');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (51, 3, 85, true, '10/25/1971');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (52, 61, 78, true, '05/05/1986');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (53, 12, 9, true, '06/19/2000');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (54, 70, 80, true, '08/10/1966');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (55, 98, 70, true, '09/05/1979');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (56, 41, 86, true, '10/07/2020');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (57, 77, 77, false, '04/28/1961');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (58, 48, 70, false, '04/20/1966');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (59, 80, 14, false, '03/12/1978');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (60, 61, 51, true, '01/10/2005');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (61, 89, 71, false, '09/20/2014');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (62, 55, 60, false, '01/21/2010');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (63, 21, 72, true, '11/21/1992');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (64, 80, 30, false, '09/02/1999');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (65, 84, 56, false, '11/04/1966');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (66, 61, 82, false, '02/08/1978');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (67, 39, 99, true, '09/01/1995');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (68, 97, 89, false, '09/17/1984');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (69, 97, 31, false, '04/21/1962');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (70, 38, 19, true, '03/02/2021');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (71, 82, 14, false, '02/24/1964');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (72, 86, 64, false, '05/20/1995');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (73, 98, 34, true, '08/10/1965');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (74, 68, 31, false, '01/14/2011');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (75, 65, 76, false, '04/04/1980');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (76, 88, 35, false, '02/05/1972');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (77, 1, 100, true, '12/26/2022');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (78, 56, 59, true, '09/05/1964');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (79, 27, 100, false, '06/06/1992');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (80, 54, 13, true, '03/08/2024');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (81, 49, 36, true, '06/30/2014');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (82, 34, 20, true, '08/10/2014');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (83, 64, 22, true, '04/01/1991');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (84, 83, 43, true, '05/18/2010');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (85, 90, 43, false, '10/29/1992');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (86, 29, 72, false, '02/06/1982');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (87, 23, 78, false, '02/03/2001');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (88, 74, 18, true, '05/29/2017');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (89, 53, 68, true, '08/01/2003');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (90, 80, 29, false, '11/04/2016');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (91, 75, 93, false, '06/26/1980');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (92, 49, 27, false, '03/13/1966');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (93, 90, 60, true, '05/01/1968');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (94, 95, 35, true, '01/24/1996');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (95, 53, 99, false, '12/03/1999');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (96, 53, 36, false, '04/26/1988');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (97, 80, 37, true, '05/21/1964');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (98, 85, 48, false, '03/01/1984');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (99, 36, 81, false, '11/16/1989');
+insert into GroupMembershipRequests  (GroupMemberShipRequestsID, GroupID, GroupMemberUserID, IsGroupMemberShipAccepted, DateAccepted) values (100, 19, 99, false, '09/16/1988');
+-- ////////////////
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (1, 'Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante.', 48, '12/08/1983');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (2, 'Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', 98, '04/30/1969');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (3, 'Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci.', 6, '09/11/2017');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (4, 'Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', 40, '12/26/1987');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (5, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue.', 99, '12/11/2022');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (6, 'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy.', 65, '05/27/2001');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (7, 'Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo.', 88, '04/28/1968');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (8, 'Maecenas pulvinar lobortis est. Phasellus sit amet erat.', 40, '12/17/1969');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (9, 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.', 98, '06/11/2014');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (10, 'Aliquam erat volutpat. In congue. Etiam justo.', 25, '01/02/2008');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (11, 'Vivamus tortor. Duis mattis egestas metus.', 15, '12/08/1960');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (12, 'Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus.', 72, '09/07/2005');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (13, 'Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis.', 50, '10/01/1972');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (14, 'Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.', 93, '11/08/1982');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (15, 'Maecenas rhoncus aliquam lacus.', 95, '03/27/1989');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (16, 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 67, '06/03/1962');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (17, 'Sed accumsan felis. Ut at dolor quis odio consequat varius.', 24, '02/20/2024');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (18, 'Suspendisse potenti. Nullam porttitor lacus at turpis.', 44, '05/25/1999');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (19, 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam.', 2, '06/14/1981');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (20, 'Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia.', 9, '12/25/2009');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (21, 'Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat. Praesent blandit.', 43, '12/11/1993');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (22, 'Proin at turpis a pede posuere nonummy.', 51, '02/01/2021');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (23, 'Integer ac neque. Duis bibendum.', 60, '05/31/1994');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (24, 'Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est.', 24, '04/04/1966');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (25, 'Morbi non quam nec dui luctus rutrum. Nulla tellus.', 61, '06/12/1974');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (26, 'Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus.', 3, '07/15/1966');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (27, 'Suspendisse accumsan tortor quis turpis.', 65, '06/16/1977');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (28, 'Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante.', 37, '11/04/1983');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (29, 'In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl.', 72, '08/10/2023');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (30, 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', 36, '03/03/2018');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (31, 'Quisque porta volutpat erat.', 33, '08/14/1995');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (32, 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo.', 65, '04/10/1962');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (33, 'Praesent blandit lacinia erat.', 30, '03/04/1984');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (34, 'Morbi vel lectus in quam fringilla rhoncus.', 7, '11/28/1970');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (35, 'Aliquam erat volutpat. In congue. Etiam justo.', 98, '11/12/2006');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (36, 'Etiam faucibus cursus urna.', 19, '12/10/2000');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (37, 'Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc.', 52, '09/13/1987');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (38, 'Donec dapibus.', 42, '12/29/1995');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (39, 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit.', 4, '08/11/1982');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (40, 'Vestibulum sed magna at nunc commodo placerat.', 93, '11/30/1999');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (41, 'Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 93, '06/21/2001');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (42, 'In blandit ultrices enim.', 92, '07/04/2005');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (43, 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', 24, '12/07/2017');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (44, 'Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa.', 18, '05/05/1969');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (45, 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi.', 74, '10/09/1964');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (46, 'Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo.', 59, '07/09/1995');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (47, 'Morbi a ipsum.', 54, '12/14/1977');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (48, 'Nulla mollis molestie lorem. Quisque ut erat.', 78, '06/24/1987');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (49, 'Vivamus in felis eu sapien cursus vestibulum.', 74, '06/24/2010');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (50, 'Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci.', 12, '11/21/1993');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (51, 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl.', 41, '08/18/2003');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (52, 'Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.', 49, '06/12/2011');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (53, 'In sagittis dui vel nisl.', 37, '01/04/1960');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (54, 'Vivamus in felis eu sapien cursus vestibulum.', 16, '08/07/1986');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (55, 'Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', 71, '04/26/1976');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (56, 'Suspendisse accumsan tortor quis turpis. Sed ante.', 36, '08/25/1964');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (57, 'Proin eu mi.', 63, '10/30/1983');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (58, 'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', 40, '03/18/1977');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (59, 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', 84, '07/08/1962');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (60, 'Nulla justo. Aliquam quis turpis eget elit sodales scelerisque.', 19, '10/11/2007');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (61, 'Proin risus.', 19, '03/23/2000');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (62, 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique.', 85, '04/02/1986');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (63, 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa.', 88, '05/23/1963');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (64, 'Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula.', 95, '04/25/2006');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (65, 'Vivamus tortor.', 58, '04/26/2020');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (66, 'Sed accumsan felis.', 97, '01/15/1972');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (67, 'Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', 98, '06/27/2014');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (68, 'Duis at velit eu est congue elementum. In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante.', 83, '10/11/2010');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (69, 'Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', 89, '06/19/2017');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (70, 'Fusce posuere felis sed lacus.', 62, '09/01/2014');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (71, 'Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 78, '10/22/1997');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (72, 'Nunc purus.', 2, '12/23/1997');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (73, 'Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 32, '06/05/1976');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (74, 'Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', 54, '06/15/1999');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (75, 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', 47, '06/14/1983');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (76, 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 33, '09/28/1970');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (77, 'In hac habitasse platea dictumst.', 66, '09/11/2023');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (78, 'Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis.', 93, '02/04/2006');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (79, 'Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci.', 71, '06/07/1984');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (80, 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', 98, '05/12/1983');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (81, 'Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.', 64, '08/10/1969');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (82, 'Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat.', 74, '09/30/1976');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (83, 'Nulla ut erat id mauris vulputate elementum.', 51, '01/12/1975');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (84, 'Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl.', 46, '01/06/2006');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (85, 'Vivamus vestibulum sagittis sapien.', 85, '01/26/2009');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (86, 'Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio.', 38, '11/14/1996');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (87, 'Aenean fermentum. Donec ut mauris eget massa tempor convallis.', 10, '03/05/1963');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (88, 'Fusce consequat. Nulla nisl. Nunc nisl.', 31, '03/22/2018');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (89, 'Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci.', 28, '12/27/1996');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (90, 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum.', 81, '05/05/1975');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (91, 'Nam nulla.', 81, '03/02/2012');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (92, 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', 13, '08/26/2008');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (93, 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante.', 10, '08/11/2020');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (94, 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam.', 8, '03/26/1981');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (95, 'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', 40, '11/20/2010');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (96, 'Suspendisse potenti.', 6, '03/21/2002');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (97, 'Praesent blandit.', 49, '07/20/1965');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (98, 'Ut at dolor quis odio consequat varius. Integer ac leo. Pellentesque ultrices mattis odio.', 2, '03/24/1988');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (99, 'Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc.', 72, '09/18/2011');
+insert into Groups (GroupID, GroupName, CreatedBy, DateAdded) values (100, 'Quisque ut erat.', 40, '07/22/2013');
+-- ///////////////
 
--- /////////////////////////////////
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (1, 'In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', '10/2/2023', true, true, 27, '9/16/1977');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (2, 'Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum. In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo. Aliquam quis turpis eget elit sodales scelerisque.', '1/17/2024', true, false, 15, '1/3/1997');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (3, 'Quisque ut erat. Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem. Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat.', '12/9/2023', false, false, 68, '10/26/1975');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (4, 'Nunc purus. Phasellus in felis. Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis.', '4/19/2024', true, false, 19, '8/23/1990');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (5, 'Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique.', '12/12/2023', false, true, 58, '11/28/1969');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (6, 'Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', '11/12/2023', false, true, 70, '11/6/1990');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (7, 'Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', '12/1/2023', true, true, 63, '3/24/1980');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (8, 'Phasellus in felis. Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', '6/20/2024', true, false, 68, '1/3/2000');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (9, 'Pellentesque at nulla.', '1/15/2024', true, true, 35, '2/10/1966');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (10, 'Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', '4/25/2024', false, false, 70, '2/5/1990');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (11, 'Aliquam erat volutpat. In congue. Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna.', '12/20/2023', true, true, 46, '9/3/1995');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (12, 'Quisque ut erat. Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', '5/3/2024', true, true, 40, '8/17/2016');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (13, 'Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo.', '3/3/2024', false, false, 89, '12/11/1976');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (14, 'Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.', '10/13/2023', false, false, 74, '9/6/1962');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (15, 'Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', '9/1/2023', true, false, 65, '12/17/2011');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (16, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', '9/19/2023', true, false, 86, '6/3/2005');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (17, 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo. Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante.', '11/17/2023', false, true, 26, '6/25/1987');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (18, 'Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim.', '1/3/2024', true, true, 23, '11/5/1962');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (19, 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl.', '9/23/2023', true, true, 42, '6/19/1985');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (20, 'Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis. Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius. Integer ac leo. Pellentesque ultrices mattis odio.', '1/19/2024', true, false, 95, '3/17/2016');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (21, 'Nullam varius. Nulla facilisi.', '3/17/2024', true, false, 74, '11/15/2012');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (22, 'Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla.', '9/14/2023', false, false, 2, '7/27/1992');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (23, 'Duis at velit eu est congue elementum. In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo. Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor.', '5/20/2024', false, true, 13, '11/25/1963');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (24, 'Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', '3/20/2024', true, true, 7, '2/7/2004');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (25, 'Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy.', '11/22/2023', true, true, 35, '9/7/1998');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (26, 'Integer ac leo. Pellentesque ultrices mattis odio.', '12/18/2023', true, false, 40, '8/12/1995');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (27, 'Duis bibendum.', '10/9/2023', false, true, 71, '7/15/1965');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (28, 'Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla.', '3/14/2024', true, true, 85, '10/27/1963');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (29, 'Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices.', '9/21/2023', true, false, 26, '10/19/1973');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (30, 'Praesent blandit lacinia erat.', '6/3/2024', true, true, 90, '12/14/2002');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (31, 'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', '2/5/2024', false, false, 98, '9/17/2012');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (32, 'Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl.', '2/7/2024', false, false, 71, '11/23/1990');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (33, 'Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl. Nunc nisl.', '7/24/2024', true, true, 20, '7/1/1994');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (34, 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue. Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum.', '5/10/2024', true, true, 24, '9/15/1980');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (35, 'Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis. Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius. Integer ac leo.', '8/20/2024', true, false, 90, '1/15/2019');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (36, 'Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla.', '5/11/2024', false, false, 87, '12/10/1999');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (37, 'Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue.', '8/14/2024', true, true, 56, '6/1/1983');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (38, 'Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci.', '3/21/2024', false, false, 43, '8/30/2004');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (39, 'Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue. Etiam justo.', '11/8/2023', false, false, 83, '12/23/2010');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (40, 'Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', '8/16/2024', true, false, 83, '3/9/1966');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (41, 'Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis.', '12/4/2023', true, false, 11, '9/14/2023');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (42, 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', '12/3/2023', true, false, 37, '1/24/1980');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (43, 'Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat.', '6/2/2024', true, true, 80, '8/18/1985');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (44, 'Donec semper sapien a libero. Nam dui.', '2/8/2024', false, false, 8, '3/7/1960');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (45, 'Sed ante.', '11/9/2023', false, false, 43, '6/6/1984');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (46, 'Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc.', '9/30/2023', true, true, 45, '8/17/1964');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (47, 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt.', '4/1/2024', false, false, 49, '3/11/1995');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (48, 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem. Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat. Praesent blandit.', '10/16/2023', false, false, 15, '2/27/1965');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (49, 'Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis. Donec semper sapien a libero. Nam dui.', '8/23/2024', false, true, 14, '9/27/2002');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (50, 'Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum. In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.', '9/10/2023', true, true, 13, '12/4/1982');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (51, 'Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', '4/11/2024', false, true, 44, '8/18/1962');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (52, 'In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', '6/12/2024', true, true, 72, '1/1/2006');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (53, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.', '3/11/2024', true, true, 62, '6/24/2006');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (54, 'Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula.', '9/11/2023', true, false, 44, '7/22/2011');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (55, 'Vestibulum sed magna at nunc commodo placerat. Praesent blandit.', '2/17/2024', true, false, 82, '10/8/2006');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (56, 'Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla.', '8/14/2024', false, false, 92, '12/8/1996');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (57, 'In congue. Etiam justo.', '12/16/2023', true, true, 74, '11/30/1983');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (58, 'Aliquam quis turpis eget elit sodales scelerisque.', '3/12/2024', false, true, 96, '6/9/1979');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (59, 'Morbi non quam nec dui luctus rutrum. Nulla tellus. In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem.', '2/23/2024', true, false, 79, '3/8/1963');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (60, 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', '1/16/2024', false, false, 74, '6/26/1989');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (61, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus.', '8/17/2024', false, false, 66, '12/6/1990');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (62, 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi.', '7/6/2024', false, false, 62, '7/23/1967');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (63, 'Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc.', '10/31/2023', true, true, 39, '12/26/2020');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (64, 'Sed ante.', '8/27/2024', true, false, 48, '3/28/1962');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (65, 'In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', '8/2/2024', true, true, 30, '5/26/1997');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (66, 'Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', '4/27/2024', false, true, 3, '6/30/1972');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (67, 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis.', '2/10/2024', true, true, 55, '6/26/1991');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (68, 'Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet.', '1/11/2024', false, false, 30, '7/14/2016');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (69, 'Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus. Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla.', '2/5/2024', true, true, 93, '4/15/1999');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (70, 'Cras in purus eu magna vulputate luctus.', '9/18/2023', true, false, 25, '1/7/2004');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (71, 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.', '5/3/2024', false, true, 29, '8/1/2015');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (72, 'Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus. Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', '11/19/2023', true, false, 49, '10/10/1996');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (73, 'Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla.', '7/19/2024', true, false, 72, '5/12/2011');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (74, 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', '4/2/2024', false, true, 86, '6/28/1984');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (75, 'Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', '5/8/2024', true, false, 58, '3/18/1998');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (76, 'Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', '11/9/2023', true, true, 65, '10/19/1999');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (77, 'Proin at turpis a pede posuere nonummy. Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum.', '7/3/2024', false, false, 7, '9/2/1964');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (78, 'Morbi a ipsum. Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc.', '11/22/2023', true, false, 28, '7/14/1963');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (79, 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue.', '9/15/2023', false, false, 68, '12/2/1999');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (80, 'Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis. Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla.', '4/22/2024', true, false, 5, '12/19/1990');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (81, 'Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', '5/28/2024', true, false, 82, '7/24/1979');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (82, 'In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', '7/10/2024', false, false, 14, '1/11/2010');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (83, 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.', '7/13/2024', false, true, 50, '6/5/1979');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (84, 'Sed accumsan felis. Ut at dolor quis odio consequat varius. Integer ac leo.', '4/16/2024', true, false, 50, '4/3/2010');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (85, 'Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', '3/10/2024', false, false, 11, '6/27/1964');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (86, 'Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', '3/15/2024', true, true, 41, '4/25/1961');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (87, 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.', '2/23/2024', true, true, 12, '9/30/2004');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (88, 'Nulla suscipit ligula in lacus. Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', '11/8/2023', true, true, 51, '7/18/1968');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (89, 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl.', '1/10/2024', false, true, 95, '8/17/2022');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (90, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.', '12/16/2023', true, false, 8, '11/21/1997');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (91, 'Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus. Curabitur at ipsum ac tellus semper interdum.', '5/6/2024', true, true, 18, '5/9/1977');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (92, 'Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt.', '6/23/2024', false, false, 53, '7/11/1978');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (93, 'Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci.', '10/31/2023', false, true, 59, '6/9/2001');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (94, 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit.', '7/16/2024', true, true, 21, '5/2/2019');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (95, 'Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat. Praesent blandit.', '8/16/2024', true, true, 67, '1/27/1963');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (96, 'Fusce posuere felis sed lacus.', '5/17/2024', true, false, 76, '12/30/1992');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (97, 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue.', '2/27/2024', false, true, 21, '11/28/2004');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (98, 'Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem.', '6/16/2024', true, false, 31, '8/14/1980');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (99, 'Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', '2/22/2024', false, false, 79, '4/3/1970');
-insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (100, 'Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl. Nunc nisl.', '10/28/2023', false, true, 70, '10/12/1968');
--- ///////////////////////////////////////////////////////////////////
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (1, 'Duis bibendum.', 89, false, true, 30, '11/22/1999');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (2, 'In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', 34, true, false, 58, '08/16/2024');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (3, 'Etiam pretium iaculis justo.', 81, false, false, 40, '07/31/1963');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (4, 'Fusce posuere felis sed lacus.', 14, true, true, 10, '11/04/1999');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (5, 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.', 43, true, true, 86, '01/10/1965');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (6, 'Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla.', 71, true, false, 29, '07/17/1974');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (7, 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit.', 7, true, false, 29, '08/23/1994');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (8, 'Integer ac neque. Duis bibendum.', 1, false, false, 71, '03/25/1988');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (9, 'Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', 78, false, false, 51, '06/16/2004');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (10, 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.', 40, true, false, 55, '05/31/1977');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (11, 'Aliquam erat volutpat. In congue.', 16, true, true, 73, '01/27/1970');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (12, 'In blandit ultrices enim.', 76, true, true, 33, '06/11/2023');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (13, 'Curabitur at ipsum ac tellus semper interdum.', 29, false, false, 56, '04/01/1996');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (14, 'Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus.', 78, false, false, 91, '04/21/1993');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (15, 'Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', 50, false, false, 54, '04/17/1976');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (16, 'Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat.', 23, false, false, 76, '08/04/2003');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (17, 'Curabitur convallis.', 14, false, true, 59, '09/22/2013');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (18, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.', 2, true, false, 17, '06/04/1966');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (19, 'Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 51, true, false, 39, '03/19/2001');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (20, 'Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus.', 36, true, false, 55, '05/13/1964');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (21, 'Suspendisse accumsan tortor quis turpis. Sed ante.', 95, true, true, 67, '03/29/1968');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (22, 'Aenean auctor gravida sem.', 67, true, false, 83, '09/02/2014');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (23, 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', 65, true, false, 19, '08/10/1988');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (24, 'Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', 40, false, true, 5, '02/09/2011');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (25, 'Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna.', 68, true, false, 59, '08/29/1980');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (26, 'Sed sagittis.', 82, false, false, 27, '06/16/1972');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (27, 'Praesent blandit. Nam nulla.', 79, false, false, 35, '11/14/2016');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (28, 'Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', 100, true, false, 64, '02/10/1960');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (29, 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', 95, false, false, 77, '12/31/2020');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (30, 'Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', 78, true, true, 41, '06/03/1994');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (31, 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien.', 90, true, true, 51, '07/14/2011');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (32, 'Quisque ut erat.', 25, true, true, 73, '06/20/1989');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (33, 'Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 42, false, false, 91, '07/11/1967');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (34, 'Donec ut mauris eget massa tempor convallis.', 71, false, false, 40, '12/06/2014');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (35, 'Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem. Integer tincidunt ante vel ipsum.', 34, true, false, 88, '01/20/1968');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (36, 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci.', 73, true, true, 11, '03/12/1971');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (37, 'Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc.', 6, true, false, 56, '07/28/1962');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (38, 'Praesent blandit lacinia erat.', 22, false, true, 66, '10/27/2004');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (39, 'Suspendisse potenti. Nullam porttitor lacus at turpis.', 8, false, false, 49, '02/02/1978');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (40, 'Donec vitae nisi.', 49, true, true, 9, '03/25/2012');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (41, 'Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci.', 81, true, false, 23, '10/12/1960');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (42, 'Proin eu mi.', 1, false, true, 35, '06/04/2010');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (43, 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', 4, true, false, 79, '01/29/2014');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (44, 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam.', 46, false, false, 91, '02/23/1985');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (45, 'Morbi non quam nec dui luctus rutrum. Nulla tellus.', 55, false, true, 32, '06/08/1967');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (46, 'Donec posuere metus vitae ipsum. Aliquam non mauris.', 77, true, true, 58, '03/27/1980');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (47, 'Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', 48, true, false, 76, '04/21/2009');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (48, 'Maecenas pulvinar lobortis est.', 52, false, true, 3, '05/17/2018');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (49, 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci.', 16, false, false, 72, '12/29/1980');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (50, 'Nulla facilisi. Cras non velit nec nisi vulputate nonummy.', 63, false, false, 82, '07/19/1960');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (51, 'Maecenas pulvinar lobortis est.', 76, false, true, 56, '09/09/1982');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (52, 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam.', 79, false, false, 81, '07/14/2001');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (53, 'In hac habitasse platea dictumst.', 1, false, true, 46, '05/31/1980');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (54, 'Curabitur in libero ut massa volutpat convallis.', 27, true, true, 67, '01/01/1986');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (55, 'Proin eu mi. Nulla ac enim.', 9, true, false, 47, '01/29/2021');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (56, 'Pellentesque at nulla. Suspendisse potenti.', 70, false, true, 82, '05/07/1961');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (57, 'Suspendisse potenti.', 65, false, true, 52, '09/20/2016');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (58, 'Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla.', 76, false, true, 79, '06/14/2001');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (59, 'Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 89, false, true, 27, '05/29/1976');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (60, 'Vestibulum sed magna at nunc commodo placerat.', 43, true, true, 4, '11/12/1996');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (61, 'Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', 38, false, false, 42, '11/09/1975');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (62, 'In hac habitasse platea dictumst. Etiam faucibus cursus urna.', 4, false, true, 51, '02/07/1983');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (63, 'Donec ut dolor.', 58, false, false, 13, '07/03/1978');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (64, 'Duis at velit eu est congue elementum. In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante.', 32, false, true, 27, '01/18/1964');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (65, 'Duis ac nibh.', 31, true, false, 41, '03/24/2007');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (66, 'Nulla ut erat id mauris vulputate elementum.', 15, true, false, 59, '01/23/1979');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (67, 'Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo.', 23, true, true, 14, '02/12/1999');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (68, 'Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus. Curabitur at ipsum ac tellus semper interdum.', 32, false, true, 56, '01/21/1992');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (69, 'Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 75, false, true, 98, '03/18/2012');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (70, 'Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor.', 39, false, true, 48, '08/02/1981');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (71, 'Nullam varius. Nulla facilisi.', 41, true, false, 34, '02/22/2016');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (72, 'Suspendisse potenti. Cras in purus eu magna vulputate luctus.', 78, true, false, 52, '08/15/1965');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (73, 'Fusce consequat. Nulla nisl. Nunc nisl.', 30, false, false, 13, '06/01/1973');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (74, 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante.', 48, true, true, 79, '09/08/2022');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (75, 'Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum.', 97, true, false, 94, '07/15/1979');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (76, 'Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus.', 72, true, false, 22, '03/10/2015');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (77, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 5, false, true, 90, '12/07/1991');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (78, 'Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo.', 6, false, false, 68, '01/26/1982');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (79, 'Proin eu mi.', 77, true, false, 19, '07/25/1965');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (80, 'Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius.', 55, true, true, 17, '02/13/1971');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (81, 'Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo.', 35, false, false, 31, '12/15/2001');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (82, 'In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', 80, false, true, 53, '11/28/2021');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (83, 'Curabitur in libero ut massa volutpat convallis.', 54, false, true, 26, '04/27/2001');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (84, 'Nunc nisl.', 27, true, true, 48, '09/26/1989');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (85, 'Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 60, false, true, 24, '05/09/1994');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (86, 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue.', 53, false, false, 11, '03/16/2000');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (87, 'Aenean lectus. Pellentesque eget nunc.', 11, false, true, 23, '01/06/1988');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (88, 'Integer a nibh.', 87, false, true, 94, '07/19/1971');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (89, 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est.', 96, true, false, 1, '07/22/2013');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (90, 'Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum.', 9, false, false, 96, '02/01/1973');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (91, 'In congue. Etiam justo. Etiam pretium iaculis justo.', 75, true, true, 1, '03/27/2004');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (92, 'Cras pellentesque volutpat dui.', 59, false, false, 5, '11/27/1978');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (93, 'Nunc purus. Phasellus in felis.', 16, false, false, 70, '04/28/1987');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (94, 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi.', 88, false, true, 14, '05/04/1996');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (95, 'Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.', 90, false, true, 65, '01/03/1998');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (96, 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', 47, false, true, 35, '12/11/1999');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (97, 'Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo. Aliquam quis turpis eget elit sodales scelerisque.', 93, true, false, 61, '07/28/1967');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (98, 'Aenean sit amet justo. Morbi ut odio.', 44, false, true, 81, '11/06/1992');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (99, 'Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 98, false, true, 1, '03/04/2004');
+insert into Posts (PostID, PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupID, DatePosted) values (100, 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 71, false, false, 34, '12/18/1969');
+-- ////
 
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (1, 'rklyner0', 'Reggi', 'Klyner', '9/15/1990', 'eI3?_&H6uW', '7/18/1961');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (2, 'ttimberlake1', 'Terrye', 'Timberlake', '12/18/1964', 'mF9\%p%0+M."q%C', '9/20/1977');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (3, 'escanterbury2', 'Eliot', 'Scanterbury', '1/14/1960', 'qZ0"li2gy}M!&w', '3/28/2008');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (4, 'tstiegar3', 'Teena', 'Stiegar', '12/30/2012', 'nF7&KaM+', '9/30/1974');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (5, 'wanthoine4', 'Wendall', 'Anthoine', '12/15/1985', 'bE9|Bp(_d)gwDoB', '7/29/2014');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (6, 'kstranio5', 'Karleen', 'Stranio', '4/9/1992', 'nT1#9b+gE', '12/24/1997');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (7, 'gmclevie6', 'Guthry', 'McLevie', '4/22/2017', 'dX8_zgk4P', '9/3/1969');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (8, 'lsiddall7', 'Llywellyn', 'Siddall', '1/15/1998', 'jJ4{|vLP"vq#I2X', '11/14/1960');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (9, 'wboud8', 'Waldon', 'Boud', '9/11/1997', 'yM4$b~2B=_/', '2/4/1976');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (10, 'jhargey9', 'Joyce', 'Hargey', '2/21/2022', 'bV1+R~WofMIQ2%w', '4/22/1995');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (11, 'cfairbrothera', 'Charo', 'Fairbrother', '10/27/2003', 'sV6=ovf''uzx2?q@', '2/20/1968');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (12, 'alachezeb', 'Anna', 'Lacheze', '1/27/2016', 'mJ9+nVUdGm"6*7F', '7/5/2023');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (13, 'hasipenkoc', 'Helga', 'Asipenko', '6/23/1963', 'qU7\YNrY', '9/29/1984');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (14, 'cswindellsd', 'Carson', 'Swindells', '9/8/1995', 'mG1%qKnoenw', '5/10/1961');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (15, 'praishere', 'Pierson', 'Raisher', '2/25/1999', 'gI4+)B\NI?o@m', '12/2/1967');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (16, 'acartnerf', 'Arliene', 'Cartner', '6/10/1967', 'sZ8|1tlPLn', '2/1/1975');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (17, 'zmedwayg', 'Zebulon', 'Medway', '5/16/1974', 'cY0?#HH%k9%cK', '7/17/2020');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (18, 'eharfleteh', 'Emelyne', 'Harflete', '4/2/1960', 'iK0`bEc+%8tWM', '1/30/1973');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (19, 'dfodeni', 'Doloritas', 'Foden', '8/21/1983', 'rD0{d!HS&qGR)PI', '1/12/1998');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (20, 'aturesj', 'Allix', 'Tures', '5/14/1966', 'eT7)n29N",x', '1/21/2022');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (21, 'iputtrellk', 'Ingrim', 'Puttrell', '8/28/1960', 'xM1*N5fX1zIt~', '10/24/1969');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (22, 'gbritianl', 'Gypsy', 'Britian', '11/7/2013', 'rG3''7=Qw+c', '9/4/2022');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (23, 'smagnarm', 'Sallyanne', 'Magnar', '4/28/1996', 'jV1/u?ZW9ha', '8/25/1973');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (24, 'bsutherdenn', 'Bella', 'Sutherden', '12/4/1992', 'eQ9.Z4''`!v},bf', '10/18/1991');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (25, 'lcasoo', 'Law', 'Caso', '1/21/1967', 'xY0{_5UY', '9/24/2020');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (26, 'mleveretp', 'Marisa', 'Leveret', '1/8/1991', 'gJ6\{SF>5v*yt', '10/29/2010');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (27, 'rroomeq', 'Rafaellle', 'Roome', '3/30/1997', 'qF4$bGpZX~8Gw', '2/26/1966');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (28, 'wdrawmerr', 'Winne', 'Drawmer', '8/7/2022', 'fK7)L(lB', '7/30/2007');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (29, 'mbedisss', 'Mead', 'Bediss', '4/27/1973', 'wD0+07D~', '8/2/1991');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (30, 'ewallacet', 'Eleanora', 'Wallace', '1/10/2014', 'sC5"RLU''GY?&Kh2h', '3/24/1976');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (31, 'acrasswelleru', 'Alexio', 'Crassweller', '4/13/2022', 'kJ4`41fU~KfT)N"L', '1/7/1988');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (32, 'ipatzeltv', 'Ingeberg', 'Patzelt', '8/26/1989', 'lM5}wW{Z>', '8/24/1982');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (33, 'egerhtsw', 'Emmet', 'Gerhts', '7/29/2019', 'pD4|&H9N', '5/3/1975');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (34, 'nkilbournx', 'Nolana', 'Kilbourn', '12/13/2002', 'aJ7@''9a*Dr(', '7/29/2022');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (35, 'aerskiny', 'Alys', 'Erskin', '7/2/2010', 'bU2$ODpzIT', '6/14/2024');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (36, 'ofettisz', 'Osgood', 'Fettis', '8/24/1960', 'cI4''/)4gxxdA{G6', '6/14/1986');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (37, 'akohlerman10', 'Anatollo', 'Kohlerman', '7/29/1988', 'dT5#7CJ%1+Tb', '5/6/1982');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (38, 'acatchpole11', 'Artie', 'Catchpole', '1/23/2024', 'qR6_18_5M%/3', '1/22/1970');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (39, 'ndrache12', 'Nadeen', 'Drache', '5/12/2006', 'yB1/Y>uZ{c!3', '10/13/2022');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (40, 'iyurin13', 'Isidoro', 'Yurin', '10/14/2012', 'hC1,f(Qi', '2/28/1963');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (41, 'ependleberry14', 'Elmo', 'Pendleberry', '11/19/1995', 'aB8+yOax<HL,kO', '9/22/1988');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (42, 'nwadlow15', 'Nariko', 'Wadlow', '9/22/2006', 'nX9<d@/Ea4', '6/26/2003');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (43, 'ddeakan16', 'Dorelia', 'Deakan', '11/3/2012', 'iZ2(lq%.', '2/25/1966');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (44, 'lruscoe17', 'Lazar', 'Ruscoe', '5/14/2015', 'pR3+uYR!5*', '12/3/1976');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (45, 'lmardle18', 'Lombard', 'Mardle', '1/16/1965', 'gU3"1&).=0pNNWS', '2/29/2024');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (46, 'sknaggs19', 'Spencer', 'Knaggs', '1/21/1983', 'tP1/XBEGF', '11/29/2008');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (47, 'asimeonov1a', 'Alfi', 'Simeonov', '5/1/1966', 'fR9@`*tIj_Xdq', '4/10/1961');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (48, 'blorrimer1b', 'Bethanne', 'Lorrimer', '7/26/2002', 'jZ2=sd9Ss\RAerrQ', '1/15/2009');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (49, 'ahurch1c', 'Averill', 'Hurch', '9/18/1967', 'mL0&#}c.`ng{''', '7/13/2014');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (50, 'lskeech1d', 'Loretta', 'Skeech', '3/3/1981', 'dE6"bgT"t5H@t+', '8/18/2024');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (51, 'achaffin1e', 'Anson', 'Chaffin', '8/28/2024', 'gK3/`F*Y#j9TiC', '4/25/2022');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (52, 'jbraden1f', 'Jasun', 'Braden', '1/28/1967', 'jJ7\.4s|mmu|rc{(', '12/1/1984');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (53, 'dspooner1g', 'Darsey', 'Spooner', '1/15/1993', 'vM9''u!Y/{0C8', '2/3/1966');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (54, 'tglanert1h', 'Tamarra', 'Glanert', '1/19/2018', 'jR0&n''E5tzfVgn', '3/23/1983');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (55, 'adorro1i', 'Arline', 'Dorro', '3/6/1979', 'eF1''}i}S.9,g$!l', '8/24/1961');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (56, 'kferraretto1j', 'Katleen', 'Ferraretto', '12/20/2022', 'dF5''~ig)abyd@0H', '11/6/1968');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (57, 'dfawks1k', 'Darice', 'Fawks', '6/27/2016', 'pF9=H@d?2ylYR/PW', '5/21/2015');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (58, 'aconsidine1l', 'Antoni', 'Considine', '3/14/2003', 'sL3/()5oAn>c', '7/7/1990');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (59, 'rjirek1m', 'Rozalin', 'Jirek', '4/14/2007', 'mM3{bht/8H&$pUm', '1/1/1964');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (60, 'cedis1n', 'Chancey', 'Edis', '9/7/1984', 'jY4{hi_j8_{IdJ}#', '10/22/1997');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (61, 'gkelsey1o', 'Glynis', 'Kelsey', '10/4/1969', 'gH8?`dISgm1`l=dn', '3/10/2016');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (62, 'rbratchell1p', 'Regine', 'Bratchell', '11/14/1986', 'pC5\6kb3g', '5/11/1992');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (63, 'mcareless1q', 'Marcos', 'Careless', '4/27/1978', 'lP6=#R(m!&q''', '1/6/2001');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (64, 'smallya1r', 'Sayre', 'Mallya', '3/29/2017', 'qW8@V+6elw.5#L', '10/19/2006');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (65, 'gwellsman1s', 'Gratia', 'Wellsman', '7/30/1978', 'xM3}\3=.hyo', '8/16/1979');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (66, 'kmiddup1t', 'Kelly', 'Middup', '8/28/1962', 'oM8,?6__4`|"p', '5/29/2008');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (67, 'mmoreing1u', 'Mirna', 'Moreing', '12/18/2012', 'lJ7)bwQ''E7', '4/26/2008');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (68, 'sforten1v', 'Siegfried', 'Forten', '12/11/2016', 'gY5=eV/%', '8/29/1998');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (69, 'ajasper1w', 'Astrid', 'Jasper', '6/22/1979', 'pX8)%`q~"c', '7/22/2015');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (70, 'jfintoph1x', 'Josias', 'Fintoph', '2/20/1996', 'wY8$AVUp', '8/23/1980');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (71, 'bmeedendorpe1y', 'Barnett', 'Meedendorpe', '7/18/1990', 'mJ5,Ts7&AqggS_R', '10/14/2011');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (72, 'rrigden1z', 'Roseline', 'Rigden', '12/26/1995', 'mQ8*ojR2sD''ALc', '11/13/1976');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (73, 'mroumier20', 'Meredith', 'Roumier', '2/7/1974', 'zC1&x\iRT1b', '2/18/2012');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (74, 'hbridgewater21', 'Hesther', 'Bridgewater', '5/6/2007', 'nI5`cZtg,', '4/13/2014');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (75, 'drivitt22', 'Dael', 'Rivitt', '2/9/1991', 'wJ7{!O"l)cqQ@C|<', '4/21/2004');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (76, 'pjanczak23', 'Powell', 'Janczak', '1/9/2010', 'nO5*_j3L%F}5SkYL', '10/1/1963');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (77, 'dmazey24', 'Delmore', 'Mazey', '6/16/1989', 'rB7)nK|dhDxTro', '12/26/1981');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (78, 'lskoate25', 'Lyndsey', 'Skoate', '10/31/1976', 'nQ9=9|VEsU)&', '7/11/1962');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (79, 'hlowry26', 'Hart', 'Lowry', '1/20/1998', 'eA9(L.*NJp.Drqj', '3/8/1976');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (80, 'dbuchan27', 'Deanne', 'Buchan', '1/23/1997', 'xR4~TLm.33', '2/7/1967');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (81, 'nwilliamson28', 'Nadeen', 'Williamson', '12/4/2016', 'cU4(}6m/?', '10/27/1990');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (82, 'broskams29', 'Bucky', 'Roskams', '12/5/2014', 'yJ7`@X&qr', '5/2/1980');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (83, 'emixer2a', 'Eyde', 'Mixer', '3/4/1968', 'fF3~WNNsJ', '5/19/1985');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (84, 'aclineck2b', 'Arleta', 'Clineck', '3/24/2001', 'eD6_%$.?~U,a', '11/6/1999');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (85, 'cscocroft2c', 'Carolina', 'Scocroft', '8/28/2020', 'pS5_P@4Z>jl0=', '3/19/1974');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (86, 'ldorrance2d', 'Lacy', 'Dorrance', '2/6/1980', 'dH3(XwL>g&M77', '8/2/1999');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (87, 'ahoxey2e', 'Anetta', 'Hoxey', '8/4/2024', 'eR3!&f(qDzZ', '5/10/2023');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (88, 'hsloyan2f', 'Haily', 'Sloyan', '9/18/2006', 'jV5|9fEE27pZ', '10/28/1989');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (89, 'wkolak2g', 'Waylin', 'Kolak', '12/13/1977', 'cB1=YX&U', '2/21/2012');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (90, 'gwagg2h', 'Gay', 'Wagg', '1/28/1992', 'hH6|_,efxt"l', '10/31/2008');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (91, 'sfeifer2i', 'Sharon', 'Feifer', '3/9/1993', 'mB9}VV9?|', '7/23/2019');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (92, 'uedelmann2j', 'Ulla', 'Edelmann', '12/22/2018', 'pA2''c3OB{*Y(T4m', '8/20/1960');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (93, 'bvince2k', 'Beckie', 'Vince', '8/10/2012', 'nK3+G''+{~>O', '7/20/1994');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (94, 'hibell2l', 'Howie', 'Ibell', '9/14/1981', 'yI3>W50lfx', '1/5/2018');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (95, 'gfrancesc2m', 'Geoffry', 'Francesc', '12/16/1971', 'kO9+Pra(f+KG', '3/27/1971');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (96, 'jbleasdale2n', 'Janot', 'Bleasdale', '9/16/2015', 'vU4\HM|\I+=7qz)', '8/1/1972');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (97, 'ymemmory2o', 'Yorgo', 'Memmory', '4/13/1986', 'hS5~''n%v8?qbyE', '10/3/2002');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (98, 'zfeathersby2p', 'Zebadiah', 'Feathersby', '4/24/2016', 'sP8/0u<k(IfXxTAz', '9/12/1962');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (99, 'pnollet2q', 'Paxon', 'Nollet', '4/17/1968', 'uU8_c9DfJf', '12/12/1998');
-insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (100, 'nskein2r', 'Nicola', 'Skein', '9/7/2011', 'dH0.\hMr3', '7/16/1972');
--- /////////////////////////////////
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (1, 'dpatis0', 'Davide', 'Patis', '10/31/1970', 'pK1=!KOu2SEn`', '05/07/1993');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (2, 'fsey1', 'Fania', 'Sey', '10/06/1985', 'gT8|)e!M', '07/08/1971');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (3, 'ehavock2', 'Evyn', 'Havock', '07/11/1962', 'lY9~0KXj|}', '07/26/1983');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (4, 'pfranke3', 'Philly', 'Franke', '06/29/1974', 'cA0''dp.\.', '12/17/1986');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (5, 'ylaxe4', 'Yale', 'Laxe', '08/27/1997', 'uO7=/l''!6A+', '10/30/1990');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (6, 'rpanyer5', 'Raine', 'Panyer', '06/12/2024', 'hM0''}{bcQ7yX!', '10/24/1960');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (7, 'lpaule6', 'Lotty', 'Paule', '11/16/1963', 'nI7+5|~Jx"(S', '02/26/1964');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (8, 'afarloe7', 'Abbott', 'Farloe', '06/15/1972', 'mE5.Oz~0,kVx%OJ', '12/19/1981');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (9, 'wgoldstein8', 'Wain', 'Goldstein', '06/05/2021', 'kX3)ETZ!P6Pnj', '12/02/2008');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (10, 'lwaiton9', 'Lucho', 'Waiton', '02/04/2003', 'nE7\@b.=u_Urct', '12/29/1975');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (11, 'jsplaina', 'Jany', 'Splain', '04/28/1970', 'kB3,KT06OAT', '01/18/2005');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (12, 'tgowardb', 'Tiphani', 'Goward', '04/23/2008', 'mI7/ixogO&WilfB', '02/08/1970');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (13, 'ohenkerc', 'Ophelia', 'Henker', '02/13/1966', 'zA4\Sp\MpV)+K', '06/23/2009');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (14, 'ethumannd', 'Eddy', 'Thumann', '11/23/1962', 'tQ4@''JVZ59W=O', '01/29/1997');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (15, 'ldunne', 'Lauretta', 'Dunn', '05/04/2014', 'tJ8|i=oX`', '08/15/1971');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (16, 'ylapishf', 'Yettie', 'Lapish', '10/03/1995', 'xU6*\|dPG+B3', '02/23/1964');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (17, 'bgolthorppg', 'Bernetta', 'Golthorpp', '01/02/1974', 'cL8,u=?2', '07/16/2023');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (18, 'jliddicoath', 'Jacquenette', 'Liddicoat', '12/08/2010', 'lY9``C)"@xav', '01/19/2001');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (19, 'jtynemouthi', 'Jorie', 'Tynemouth', '10/10/2003', 'hA7("$n1+RMA9yu', '03/24/1971');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (20, 'mragdalej', 'Marylou', 'Ragdale', '05/23/2021', 'gW0(X''8>+`hu', '02/03/2013');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (21, 'rmacritchiek', 'Rica', 'MacRitchie', '12/09/2018', 'kI0*!\U#i=', '04/05/2024');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (22, 'cclulowl', 'Cornall', 'Clulow', '10/08/2016', 'jP1<fyz/XafQ', '03/08/1981');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (23, 'mscollickm', 'Mil', 'Scollick', '05/28/1992', 'fJ0$(UO)Au', '10/29/2018');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (24, 'kwoloschinn', 'Katina', 'Woloschin', '11/21/1997', 'bG4.NjhyWl>|', '06/07/1971');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (25, 'cmedlero', 'Charlene', 'Medler', '08/06/1966', 'vF1#Lcct_%', '06/09/1979');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (26, 'jdyersp', 'Josephine', 'Dyers', '03/12/2006', 'gW4\w\jDF/u}~', '07/14/1989');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (27, 'cjanuq', 'Colver', 'Janu', '06/16/2013', 'vV5!|cm2,', '11/02/1989');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (28, 'iweeklandr', 'Ingunna', 'Weekland', '08/28/2008', 'hY9+r2Pp', '10/19/2023');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (29, 'galejos', 'Geoff', 'Alejo', '07/30/1978', 'fB2*GQJijm*razYQ', '12/19/2016');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (30, 'elanferet', 'Elberta', 'Lanfere', '04/23/1976', 'fU2@4cBHlr%', '05/18/2000');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (31, 'agwyeru', 'Alexis', 'Gwyer', '02/22/2021', 'lH9|SRi6u', '05/17/1996');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (32, 'vcollcuttv', 'Van', 'Collcutt', '06/23/1979', 'eC1{QWhqP\!', '07/31/1996');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (33, 'rhabletw', 'Rhoda', 'Hablet', '08/06/1996', 'aH8#Ht0wET', '07/18/1980');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (34, 'jmcarthurx', 'Jule', 'McArthur', '05/09/2016', 'pZ9!sCaL$gEITV5T', '07/23/1975');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (35, 'ealflatty', 'Efrem', 'Alflatt', '08/04/1984', 'vL9"#i~{', '12/16/2021');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (36, 'rbanaszczykz', 'Revkah', 'Banaszczyk', '05/01/1971', 'bW1@H20}p#GO"', '08/14/2005');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (37, 'dwoolgar10', 'Dav', 'Woolgar', '02/05/1976', 'kN5)@!Lm2', '06/05/2005');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (38, 'cpinkard11', 'Clarke', 'Pinkard', '04/13/2006', 'oT1<u(V6', '04/20/2015');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (39, 'saistrop12', 'Sydel', 'Aistrop', '05/10/1985', 'nM0_*S4Y68Ynz', '10/09/1997');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (40, 'weaddy13', 'Winnie', 'Eaddy', '09/22/1971', 'oX7|i_\L{<lZ''n&', '09/14/1997');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (41, 'tfarncomb14', 'Trever', 'Farncomb', '04/05/1968', 'zI9\BE`JwqVH0l#8', '06/06/1969');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (42, 'ehalsey15', 'Eustace', 'Halsey', '06/27/1984', 'yZ3&igrCTYTN', '03/10/2006');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (43, 'istange16', 'Ianthe', 'St Ange', '08/27/1975', 'sR0|<ftf6@5MuClb', '03/24/1982');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (44, 'ughelardi17', 'Ursa', 'Ghelardi', '04/17/2007', 'fU2@11,&a', '05/08/1998');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (45, 'fkob18', 'Falito', 'Kob', '06/08/2015', 'lK7<YdJW.h''BV@', '07/12/1968');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (46, 'fquibell19', 'Fredi', 'Quibell', '07/26/1992', 'lD4>Q5''PNp\S''7Ph', '05/08/2006');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (47, 'nrogers1a', 'Nicolais', 'Rogers', '03/27/1986', 'uC0_=`*M9|''''.', '08/05/1974');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (48, 'agorler1b', 'Afton', 'Gorler', '06/11/2021', 'pR2$?v)huU_w', '02/27/1963');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (49, 'tbugden1c', 'Terrel', 'Bugden', '12/12/2015', 'lW5}Nltc}V?"H7', '11/11/1960');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (50, 'aturnell1d', 'Alfi', 'Turnell', '12/01/1987', 'fJ1?fmBqmpY0W!', '02/19/1974');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (51, 'mdivers1e', 'Mariejeanne', 'Divers', '04/19/1978', 'uJ9/znm~Er5r', '02/19/2006');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (52, 'cdrakes1f', 'Cariotta', 'Drakes', '08/27/2015', 'dO2''ADxZ\>U', '09/30/1974');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (53, 'plunck1g', 'Peder', 'Lunck', '03/29/2016', 'uS5=lmBkaO2`"4m>', '09/06/1993');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (54, 'ddericut1h', 'Dov', 'Dericut', '07/04/2011', 'uB0&*F3l5RkC?{1n', '06/13/1979');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (55, 'cvittore1i', 'Corrinne', 'Vittore', '06/17/1997', 'lY8(xq=v?Q{G4`}', '11/07/1975');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (56, 'ccalifornia1j', 'Celeste', 'California', '05/31/2011', 'vI9|=z67d', '05/04/1965');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (57, 'fwardhough1k', 'Finn', 'Wardhough', '07/29/2013', 'eC7%+u+xlju', '06/12/1982');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (58, 'oeck1l', 'Opalina', 'Eck', '04/17/2003', 'vZ6*L"2V~m', '07/02/2016');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (59, 'roxtarby1m', 'Raimondo', 'Oxtarby', '08/29/1992', 'cM5?`cU4', '11/30/2011');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (60, 'echomiszewski1n', 'Esmaria', 'Chomiszewski', '09/08/2001', 'gO2_1''2"i', '10/04/1980');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (61, 'pketchell1o', 'Petunia', 'Ketchell', '02/27/2015', 'zG9`%Z{k,)>{qGiI', '09/22/2003');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (62, 'tdyet1p', 'Terrye', 'Dyet', '05/03/1996', 'gS6)zk*>.>9A1W0`', '07/17/2021');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (63, 'rthominga1q', 'Robin', 'Thominga', '05/21/1967', 'sT1+|i.!R.Wm', '04/08/1975');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (64, 'spote1r', 'Sonia', 'Pote', '04/09/2011', 'bS0,7<_7S', '05/21/2019');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (65, 'jdye1s', 'Jolee', 'Dye', '07/23/1989', 'yW0|MK$&V`gGK&E|', '06/18/2018');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (66, 'achastelain1t', 'Ashleigh', 'Chastelain', '11/02/1964', 'hX6`=HQL7Ym.zT', '04/03/1983');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (67, 'scroisdall1u', 'Solly', 'Croisdall', '11/15/1967', 'lZ6''TzS1', '12/11/2007');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (68, 'ckapiloff1v', 'Cleo', 'Kapiloff', '12/16/1998', 'hG2{vjbEzOcF', '10/04/2005');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (69, 'tilyunin1w', 'Tanya', 'Ilyunin', '11/22/1981', 'yG8*!E7\~r', '05/01/1978');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (70, 'rbidgood1x', 'Reid', 'Bidgood', '03/10/1994', 'cE1(AKE2Fv/*', '06/08/1960');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (71, 'gfoley1y', 'Gabie', 'Foley', '11/05/2023', 'rU9/O,Nd.E}', '10/12/2009');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (72, 'isimonelli1z', 'Ilka', 'Simonelli', '08/12/2001', 'nL6_~O2b"AcEFkM', '05/14/2006');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (73, 'jdegenhardt20', 'Jessey', 'Degenhardt', '07/28/1966', 'rG3,%7veYEF', '05/30/2003');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (74, 'wholcroft21', 'Weidar', 'Holcroft', '03/31/1976', 'xE9/A(+f)QH7t<K', '04/22/2011');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (75, 'dren22', 'Denney', 'Ren', '05/18/1983', 'pZ6&j4J`h,q6', '12/05/1966');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (76, 'cpilipets23', 'Carmine', 'Pilipets', '03/21/2009', 'nU1}g$w%bt', '11/23/2010');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (77, 'golczyk24', 'Giacomo', 'Olczyk', '08/27/2012', 'hP4!=%"(/B', '05/28/2016');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (78, 'sboshier25', 'Shelbi', 'Boshier', '11/23/1992', 'mP6.1qv3%R5', '08/24/2001');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (79, 'dcollister26', 'Daveta', 'Collister', '03/01/1982', 'kA8_Uc6rd*+', '07/19/1983');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (80, 'mjeckell27', 'Melly', 'Jeckell', '12/22/1979', 'cW7%/a''BG"=', '08/02/2023');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (81, 'tprettjohn28', 'Tiebout', 'Prettjohn', '02/17/1975', 'gG0''qT@7Io`/''ji', '10/22/1961');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (82, 'bchainey29', 'Beatrisa', 'Chainey', '11/05/1976', 'rA7<h(VkWkaT0', '09/06/2006');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (83, 'lmoseby2a', 'Lanae', 'Moseby', '10/10/1965', 'pS8*c3+{%tw8,J\', '03/25/1963');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (84, 'kantonazzi2b', 'Kimbra', 'Antonazzi', '04/16/1986', 'mI6!Z|IHwd!', '02/25/1989');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (85, 'ddarrach2c', 'Dalt', 'Darrach', '04/08/1966', 'uZ4,C9<dPMb5', '08/03/2022');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (86, 'nakred2d', 'Nicolle', 'Akred', '07/26/2024', 'xX9!Wmo0tq%x', '05/19/1973');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (87, 'adenniston2e', 'Annetta', 'Denniston', '06/13/1966', 'aL4~`10=E5}M@', '02/11/2003');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (88, 'ndeare2f', 'Niven', 'Deare', '06/18/1987', 'dH4`9XZ\5zKh7X@', '06/26/1977');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (89, 'apietersen2g', 'Addie', 'Pietersen', '04/15/1963', 'uO1%l_UHSvc.`P\', '10/27/1977');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (90, 'egude2h', 'Eduardo', 'Gude', '04/22/1987', 'cP2"i$cq1GG,', '11/17/1993');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (91, 'bjakubovits2i', 'Bram', 'Jakubovits', '11/21/1993', 'aK2)7MiM', '01/27/1982');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (92, 'dshoppee2j', 'Derron', 'Shoppee', '07/21/1967', 'uL5_im\pfP%91WGl', '09/04/2007');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (93, 'byatman2k', 'Beryle', 'Yatman', '03/05/1986', 'jY6!WE5s5)', '09/13/1965');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (94, 'kcardillo2l', 'Kris', 'Cardillo', '08/07/1978', 'cB5$r9HC=', '12/09/1983');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (95, 'llewer2m', 'Lilia', 'Lewer', '02/06/1998', 'yI5(1Rg*rPD', '12/25/2001');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (96, 'oarnison2n', 'Odell', 'Arnison', '12/22/1977', 'aF2''0"_h`PvMmBQ', '01/14/2010');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (97, 'edominey2o', 'Ennis', 'Dominey', '11/03/1975', 'gV3#V%3YfNmGB', '01/25/1996');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (98, 'igiriardelli2p', 'Iolanthe', 'Giriardelli', '04/10/1992', 'hV8\IZ"gR', '01/08/2000');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (99, 'ftipler2q', 'Francisca', 'Tipler', '06/22/1978', 'mH6+f$4so2''X', '11/08/1960');
+insert into Users (UserID, Username, FirstName, LastName, DateOfBirth, Password, DateAdded) values (100, 'lwimpenny2r', 'Lesly', 'Wimpenny', '12/12/2002', 'mV6=d#u*', '12/05/2023');
